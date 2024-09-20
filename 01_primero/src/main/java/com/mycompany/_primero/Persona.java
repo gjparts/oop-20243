@@ -30,4 +30,25 @@ public class Persona {
         this.edad = 0;
         this.genero = 'X';
     }
+    //constructor con tres parametros
+    public Persona(String nombre, int edad, char genero){
+        this.nombre = nombre;
+        this.edad = edad;
+        this.genero = genero;
+    }
+    //constructor con dos parametros
+    public Persona(String nombre, char genero){
+        this.nombre = nombre;
+        this.edad = 0;
+        this.genero = genero;
+    }
+    //constructor con un parametro
+    public Persona(String nombre){
+        //opcional: si quiere evitar repetir codigo puede mandar
+        //a llamar otros constructor para llenar los atributos y luego
+        //solo reemplaza el que Usted recibe por este constructor
+        //ejemplo: mandare a llamar lo que hace el constructor sin parametros:
+        this();
+        this.nombre = nombre;
+    }
 }

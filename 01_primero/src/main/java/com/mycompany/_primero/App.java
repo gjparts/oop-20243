@@ -29,5 +29,12 @@ public class App {
         System.out.println("nombre: "+pe1.nombre);
         System.out.println("edad: "+pe1.edad);
         System.out.println("genero: "+pe1.genero);
+        
+        Persona pe2 = new Persona("Irene",40,'F');
+        //valores de los atributos de pe2
+        System.out.println("********* pe2 **********");
+        System.out.println("nombre: "+pe2.nombre);
+        System.out.println("edad: "+pe2.edad);
+        System.out.println("genero: "+pe2.genero);
     }
 }
