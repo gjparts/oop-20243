@@ -36,5 +36,28 @@ public class App {
         System.out.println("nombre: "+pe2.nombre);
         System.out.println("edad: "+pe2.edad);
         System.out.println("genero: "+pe2.genero);
+        
+        Persona pe3 = new Persona("Josue");
+        //valores de los atributos de pe3
+        System.out.println("********* pe3 **********");
+        System.out.println("nombre: "+pe3.nombre);
+        System.out.println("edad: "+pe3.edad);
+        System.out.println("genero: "+pe3.genero);
+        
+        Carro c1 = new Carro("Honda", "civic", 2004, "negro");
+        //valores de los atributos de c1
+        System.out.println("********* c1 **********");
+        System.out.println("marca: "+c1.marca);
+        System.out.println("modelo: "+c1.modelo);
+        System.out.println("anio: "+c1.anio);
+        System.out.println("color: "+c1.color);
+        
+        Carro c2 = new Carro("Pontiac", "Vibe");
+        //valores de los atributos de c2
+        System.out.println("********* c2 **********");
+        System.out.println("marca: "+c2.marca);
+        System.out.println("modelo: "+c2.modelo);
+        System.out.println("anio: "+c2.anio);
+        System.out.println("color: "+c2.color);
     }
 }
