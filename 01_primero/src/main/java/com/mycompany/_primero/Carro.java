@@ -32,4 +32,12 @@ public class Carro {
     }
     /*Si JAVA encuentra que en una clase ya hay constructores entonces
     ya no les va a crear el contructor sin parametros en caso de que no esté.*/
+    //metodos
+    public void imprimir(){
+        System.out.println("******* CARRO *******");
+        System.out.println("Marca: "+this.marca);
+        System.out.println("Modelo: "+this.modelo);
+        System.out.println("Año: "+this.anio);
+        System.out.println("Color: "+this.color);
+    }
 }

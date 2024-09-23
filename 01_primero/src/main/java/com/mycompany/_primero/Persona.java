@@ -51,4 +51,29 @@ public class Persona {
         this();
         this.nombre = nombre;
     }
+    //metodos
+    public void imprimir(){
+        System.out.println("********* PERFIL *********");
+        System.out.println("Nombre: "+this.nombre);
+        System.out.println("Edad: "+this.edad);
+        System.out.println("Genero: "+this.getGeneroDescripcion());
+        if( this.esMayorDeEdad() == true ) System.out.println("La persona es mayor de edad");
+    }
+    //metodo que devuelve el genero de la persona; pero como una descripcion larga
+    public String getGeneroDescripcion(){
+        if( this.genero == 'M' ) return "Masculino";
+        if( this.genero == 'F' ) return "Femenino";
+        if( this.genero == 'X' ) return "Otros";
+        return "No configurado";
+    }
+    //metodo que devuelve si la persona es mayor de edad
+    public boolean esMayorDeEdad(){
+        /*if( this.edad >= 18 )
+            return true;
+        else
+            return false;*/
+        //retornamos el resultado de comparar la edad con 18
+        //si se cumple retorna true, sino retorna false
+        return ( this.edad >= 18 );
+    }
 }

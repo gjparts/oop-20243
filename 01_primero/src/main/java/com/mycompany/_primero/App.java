@@ -15,49 +15,47 @@ public class App {
         Persona pe1 = new Persona();
         System.out.println("Direccion de memoria de pe1: "+pe1);
         //valores de los atributos de pe1
-        System.out.println("********* pe1 **********");
-        System.out.println("nombre: "+pe1.nombre);
-        System.out.println("edad: "+pe1.edad);
-        System.out.println("genero: "+pe1.genero);
+        pe1.imprimir();
+        
         //cambiar los valores de los atributos
         //de pe1 desde aqui
         pe1.nombre = "Gerardo";
         pe1.edad = 42;
         pe1.genero = 'M';
         //valores de los atributos de pe1
-        System.out.println("********* pe1 **********");
-        System.out.println("nombre: "+pe1.nombre);
-        System.out.println("edad: "+pe1.edad);
-        System.out.println("genero: "+pe1.genero);
+        pe1.imprimir();
         
         Persona pe2 = new Persona("Irene",40,'F');
         //valores de los atributos de pe2
-        System.out.println("********* pe2 **********");
-        System.out.println("nombre: "+pe2.nombre);
-        System.out.println("edad: "+pe2.edad);
-        System.out.println("genero: "+pe2.genero);
+        pe2.imprimir();
         
         Persona pe3 = new Persona("Josue");
         //valores de los atributos de pe3
-        System.out.println("********* pe3 **********");
-        System.out.println("nombre: "+pe3.nombre);
-        System.out.println("edad: "+pe3.edad);
-        System.out.println("genero: "+pe3.genero);
+        pe3.imprimir();
         
         Carro c1 = new Carro("Honda", "civic", 2004, "negro");
         //valores de los atributos de c1
-        System.out.println("********* c1 **********");
+        /*System.out.println("********* c1 **********");
         System.out.println("marca: "+c1.marca);
         System.out.println("modelo: "+c1.modelo);
         System.out.println("anio: "+c1.anio);
-        System.out.println("color: "+c1.color);
+        System.out.println("color: "+c1.color);*/
+        c1.imprimir();
         
         Carro c2 = new Carro("Pontiac", "Vibe");
         //valores de los atributos de c2
-        System.out.println("********* c2 **********");
+        /*System.out.println("********* c2 **********");
         System.out.println("marca: "+c2.marca);
         System.out.println("modelo: "+c2.modelo);
         System.out.println("anio: "+c2.anio);
-        System.out.println("color: "+c2.color);
+        System.out.println("color: "+c2.color);*/
+        c2.imprimir();
+        
+        //repaso: si imprime una comparacion, lo que se retorna es
+        //un booleano: true si se cumple o false si no se cumple
+        int laEdad = 19;
+        System.out.println( laEdad >= 18 );
+        laEdad = 11;
+        System.out.println( laEdad >= 18 );
     }
 }
