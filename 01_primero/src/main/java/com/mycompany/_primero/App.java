@@ -57,5 +57,8 @@ public class App {
         System.out.println( laEdad >= 18 );
         laEdad = 11;
         System.out.println( laEdad >= 18 );
+        
+        Empleado em1 = new Empleado("Gerardo",42,'M',10000,'T');
+        em1.imprimir();
     }
 }
