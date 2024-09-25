@@ -28,10 +28,11 @@ public class Empleado {
     public Empleado(String nombre, int edad, char genero,
             float salario, char contrato) {
         this.nombre = nombre;
-        this.edad = edad;
-        this.genero = genero;
-        this.salario = salario;
-        this.contrato = contrato;
+        //para los atributos privados hay que usar los set
+        this.setEdad(edad);
+        this.setGenero(genero);
+        this.setSalario(salario);
+        this.setContrato(contrato);
     }
     //metodos
     /**
@@ -64,6 +65,65 @@ public class Empleado {
             this.edad = edad; //se acepta
         else
             throw new IllegalArgumentException("Edad debe de ser >= 18");
+    }
+    /**
+     * Retorna el genero de el empleado
+     * @return un valor de tipo char
+     */
+    public char getGenero(){
+        return this.genero;
+    }
+    /**
+     * Establece el genero del empleado
+     * @param genero un valor <font color='red'>char</font> que puede ser:
+     * <ul>
+     *  <li>F para femenino</li>
+     *  <li>M para masculino</li>
+     *  <li>X para otros</li>
+     * </ul>*/
+    public void setGenero(char genero){
+        if( genero == 'F' || genero == 'M' || genero == 'X' )
+            this.genero = genero; //se acepta.
+        else
+            throw new IllegalArgumentException("Genero debe ser: F, M, X");
+    }
+    /**
+     * Devuelve el salario del empleado
+     * @return un valor de tipo float
+     */
+    public float getSalario(){
+        return this.salario;
+    }
+    /**
+     * Establece el salario del empleado
+     * @param salario un valor float >= 0
+     */
+    public void setSalario(float salario){
+        if( salario >= 0 )
+            this.salario = salario; //se acepta
+        else
+            throw new IllegalArgumentException("Salario debe de ser >= 0");
+    }
+    /**
+     * Devuelve el tipo de contrato del empleado
+     * @return un valor char
+     */
+    public char getContrato(){
+        return this.contrato;
+    }
+    /**
+     * Establece el tipo de contrato del empleado
+     * @param contrato un valor char que puede ser:
+     * <ul>
+     *  <li>T para temporal</li>
+     *  <li>P para permanente</li>
+     * </ul>
+     */
+    public void setContrato(char contrato){
+        if( contrato == 'T' || contrato == 'P' )
+            this.contrato = contrato; //se acepta
+        else
+            throw new IllegalArgumentException("Contrato debe de ser T, P");
     }
 }
 
