@@ -58,6 +58,20 @@ public class App {
                 }
             }
             if( opcion == 3 ) System.out.println("Saldo Actual: "+cuentaActual.getSaldo());
+            if( opcion == 4 ){
+                //menu selector de cuentas de ahorro del cliente
+                System.out.println("******************************");
+                System.out.println("\t1) "+c1.numeroCuenta);
+                System.out.println("\t2) "+c2.numeroCuenta);
+                System.out.println("\t3) "+c3.numeroCuenta);
+                System.out.print("Digite el numero del item deseado: ");
+                int itemCuenta = x.nextInt();
+                if( itemCuenta == 1 ) cuentaActual = c1;
+                if( itemCuenta == 2 ) cuentaActual = c2;
+                if( itemCuenta == 3 ) cuentaActual = c3;
+                if( itemCuenta < 1 || itemCuenta > 3 ) System.out.println("Cuenta no valida.");
+            }
+            if( opcion == 5 ) System.out.println("Hasta pronto, retire su tarjeta.");
         }while(opcion != 5);
     }
 }
