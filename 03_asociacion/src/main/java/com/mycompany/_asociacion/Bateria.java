@@ -23,4 +23,8 @@ public class Bateria {
         
         this.miliamperios = miliamperios;
     }
+    //metodos
+    public Fabricante getMarca() {
+        return this.marca;
+    }
 }
