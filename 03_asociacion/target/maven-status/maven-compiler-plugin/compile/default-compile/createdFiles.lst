@@ -1,4 +1,6 @@
 com\mycompany\_asociacion\App.class
 com\mycompany\_asociacion\Fabricante.class
+com\mycompany\_asociacion\Smartphone.class
+com\mycompany\_asociacion\Chip.class
 com\mycompany\_asociacion\Operador.class
 com\mycompany\_asociacion\Bateria.class
