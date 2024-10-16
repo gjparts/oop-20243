@@ -1,6 +1,7 @@
 package com.mycompany._asociacion_factura;
 import java.util.Calendar;
 import java.text.SimpleDateFormat;
+import java.text.DecimalFormat;
 public class Factura {
     //atributos
     public int numero;
@@ -75,8 +76,12 @@ public class Factura {
             subtotal += this.producto4.precioVenta;
         }
         //resultados
-        System.out.println("Subtotal: "+subtotal);
-        System.out.println("ISV 15%: "+subtotal*0.15f);
-        System.out.println("Total: "+subtotal*1.15f);
+        DecimalFormat formato = new DecimalFormat();
+        formato.setMaximumFractionDigits(2);
+        formato.setMinimumFractionDigits(2);
+        
+        System.out.println("Subtotal: "+formato.format(subtotal));
+        System.out.println("ISV 15%: "+formato.format(subtotal*0.15f));
+        System.out.println("Total: "+formato.format(subtotal*1.15f));
     }
 }

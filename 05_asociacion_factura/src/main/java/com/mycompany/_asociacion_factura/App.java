@@ -1,4 +1,5 @@
 package com.mycompany._asociacion_factura;
+import java.util.Calendar;
 public class App {
 
     public static void main(String[] args) {
@@ -14,5 +15,16 @@ public class App {
         Producto churrito = new Producto("Taqueritos",
                 new CategoriaProducto("Botanas", "14"), 12);
         
+        Calendar fecha1 = Calendar.getInstance();
+        fecha1.set(2024,9,15);
+        Factura f1 = new Factura(1, fecha1, c1, cocacola);
+        f1.producto3 = churrito;
+        f1.imprimir();
+        
+        Factura f2 = new Factura(2, Calendar.getInstance(), null, fruta1 );
+        f2.producto2 = fruta2;
+        f2.producto3 = fruta2;
+        f2.producto4 = fruta1;
+        f2.imprimir();
     }
 }
