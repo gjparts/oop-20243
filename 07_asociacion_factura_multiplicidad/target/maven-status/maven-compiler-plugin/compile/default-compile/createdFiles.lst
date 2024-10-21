@@ -1,5 +1,5 @@
-com\mycompany\_asociacion_factura\Cliente.class
-com\mycompany\_asociacion_factura\Producto.class
-com\mycompany\_asociacion_factura\App.class
-com\mycompany\_asociacion_factura\Factura.class
-com\mycompany\_asociacion_factura\CategoriaProducto.class
+com\mycompany\_asociacion_factura_multiplicidad\Factura.class
+com\mycompany\_asociacion_factura_multiplicidad\CategoriaProducto.class
+com\mycompany\_asociacion_factura_multiplicidad\App.class
+com\mycompany\_asociacion_factura_multiplicidad\Cliente.class
+com\mycompany\_asociacion_factura_multiplicidad\Producto.class

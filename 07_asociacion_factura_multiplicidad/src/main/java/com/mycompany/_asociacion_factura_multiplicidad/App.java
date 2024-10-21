@@ -17,14 +17,21 @@ public class App {
         
         Calendar fecha1 = Calendar.getInstance();
         fecha1.set(2024,9,15);
-        Factura f1 = new Factura(1, fecha1, c1, cocacola);
-        f1.producto3 = churrito;
+        
+        //coleccion de productos para f1
+        Producto arr1[] = { cocacola, churrito };
+        
+        Factura f1 = new Factura(1, fecha1, c1, arr1);
         f1.imprimir();
         
-        Factura f2 = new Factura(2, Calendar.getInstance(), null, fruta1 );
-        f2.producto2 = fruta2;
-        f2.producto3 = fruta2;
-        f2.producto4 = fruta1;
+        //coleccion de productos para f2
+        Producto arr2[] = { fruta1, fruta2, fruta2, fruta1 };
+        
+        Factura f2 = new Factura(2, Calendar.getInstance(), null, arr2 );
         f2.imprimir();
+        
+        Producto arr3[] = {churrito, churrito, churrito, churrito, cocacola, cocacola, fruta1};
+        Factura f3 = new Factura(2,Calendar.getInstance(),c1, arr3);
+        f3.imprimir();
     }
 }

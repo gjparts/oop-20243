@@ -9,31 +9,30 @@ public class Factura {
     public Cliente cliente;
     private Producto[] productos; //multiplicidad: eliminar los elementos repetitivos
     //constructor
-    public Factura(int numero, Calendar fecha, Cliente cliente, Producto producto1) {
+    public Factura(int numero, Calendar fecha, Cliente cliente, Producto[] productos) {
         this.numero = numero;
         this.fecha = fecha;
         this.cliente = cliente;
-        this.setProducto1(producto1);
+        this.setProductos(productos);
     }
     //metodos
-    //producto1 puede ser cambiado en cualquier momento; pero no puede ser null
-    public void setProducto1(Producto producto1) {
-        if( producto1 == null )
-            throw new IllegalArgumentException("producto1 no puede ser null");
+    //productos puede ser cambiado en cualquier momento; pero no puede ser null
+    public void setProductos(Producto[] productos) {
+        //al menos el primer elemento del arreglo debe de venir lleno, aparte
+        //que todo el arreglo no puede ser null
+        if( productos == null )
+            throw new IllegalArgumentException("Arreglo productos no puede ser null");
         else
-            this.producto1 = producto1; //se acepta
+            if( productos.length == 0 )
+                throw new IllegalArgumentException("Arreglo productos debe tener al menos un producto");
+            else
+                if( productos[0] == null )
+                    throw new IllegalArgumentException("Primer producto en el arreglo no puede ser null");
+                else
+                    this.productos = productos; //se acepta el arreglo
     }
-    public Producto getProducto1() {
-        return this.producto1;
-    }
-    public Producto getProducto2() {
-        return this.producto2;
-    }
-    public Producto getProducto3() {
-        return this.producto3;
-    }
-    public Producto getProducto4() {
-        return this.producto4;
+    public Producto[] getProductos() {
+        return this.productos;
     }
     public void imprimir(){
         System.out.println("*** Factura ***");
@@ -55,22 +54,12 @@ public class Factura {
         }
         float subtotal = 0;
         System.out.println("Producto\tPrecio");
-        //producto1 nunca va a llegar a ser null segun hemos diseñado esta clase
-        //por lo tanto no es necesario validarlo
-        System.out.println(this.producto1.nombre+"\t"+this.producto1.precioVenta);
-        subtotal += this.producto1.precioVenta;
-        //producto2 a producto4 pueden llegar a ser null:
-        if( this.producto2 != null ){
-            System.out.println(this.producto2.nombre+"\t"+this.producto2.precioVenta);
-            subtotal += this.producto2.precioVenta;
-        }
-        if( this.producto3 != null ){
-            System.out.println(this.producto3.nombre+"\t"+this.producto3.precioVenta);
-            subtotal += this.producto3.precioVenta;
-        }
-        if( this.producto4 != null ){
-            System.out.println(this.producto4.nombre+"\t"+this.producto4.precioVenta);
-            subtotal += this.producto4.precioVenta;
+        //recorrer la coleccion de productos, validar cada uno que sea distinto de null antes de imprimir
+        for( int i = 0; i < this.productos.length; i++ ){
+            if( this.productos[i] != null ){
+                System.out.println(this.productos[i].nombre+"\t"+this.productos[i].precioVenta);
+                subtotal += this.productos[i].precioVenta;
+            }
         }
         //resultados
         DecimalFormat formato = new DecimalFormat();
