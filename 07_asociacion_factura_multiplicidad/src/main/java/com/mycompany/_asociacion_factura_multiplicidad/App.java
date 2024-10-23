@@ -31,7 +31,10 @@ public class App {
         f2.imprimir();
         
         Producto arr3[] = {churrito, churrito, churrito, churrito, cocacola, cocacola, fruta1};
-        Factura f3 = new Factura(2,Calendar.getInstance(),c1, arr3);
+        Factura f3 = new Factura(3,Calendar.getInstance(),c1, arr3);
         f3.imprimir();
+        
+        Factura f4 = new Factura(4, Calendar.getInstance(), c1, new Producto[]{ fruta1, cocacola } );
+        f4.imprimir();
     }
 }
