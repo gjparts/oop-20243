@@ -74,5 +74,13 @@ public class Persona {
                 }
             }
         }
+        //imprimir la coleccion de hijos
+        if( this.hijos != null ){
+            System.out.println("Hijos:");
+            for( int i = 0; i < this.hijos.size(); i++ ){
+                if( this.hijos.get(i) != null )
+                    System.out.println("\t* "+this.hijos.get(i).nombre);
+            }
+        }
     }
 }
