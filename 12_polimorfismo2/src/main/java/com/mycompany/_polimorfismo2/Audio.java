@@ -17,4 +17,14 @@ public class Audio extends Media {
         this.year = year;
         this.track = track;
     }
+    //metodos
+    @Override
+    public void print() {
+        super.print(); //hacer el llamado a la super clase
+        //nuevas instrucciones:
+        System.out.println("Artist: "+this.artist);
+        System.out.println("Album: "+this.album);
+        System.out.println("Year: "+this.year);
+        System.out.println("Track: "+this.track);
+    }
 }
