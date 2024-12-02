@@ -1,0 +1,9 @@
+C:\Users\Gerardo\source\repos\OOP20243\OOP20243\bin\Debug\OOP20243.exe.config
+C:\Users\Gerardo\source\repos\OOP20243\OOP20243\bin\Debug\OOP20243.exe
+C:\Users\Gerardo\source\repos\OOP20243\OOP20243\bin\Debug\OOP20243.pdb
+C:\Users\Gerardo\source\repos\OOP20243\OOP20243\obj\Debug\OOP20243.csproj.AssemblyReference.cache
+C:\Users\Gerardo\source\repos\OOP20243\OOP20243\obj\Debug\OOP20243.Properties.Resources.resources
+C:\Users\Gerardo\source\repos\OOP20243\OOP20243\obj\Debug\OOP20243.csproj.GenerateResource.cache
+C:\Users\Gerardo\source\repos\OOP20243\OOP20243\obj\Debug\OOP20243.csproj.CoreCompileInputs.cache
+C:\Users\Gerardo\source\repos\OOP20243\OOP20243\obj\Debug\OOP20243.exe
+C:\Users\Gerardo\source\repos\OOP20243\OOP20243\obj\Debug\OOP20243.pdb
