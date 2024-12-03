@@ -7,3 +7,13 @@ C:\Users\Gerardo\source\repos\OOP20243\OOP20243\obj\Debug\OOP20243.csproj.Genera
 C:\Users\Gerardo\source\repos\OOP20243\OOP20243\obj\Debug\OOP20243.csproj.CoreCompileInputs.cache
 C:\Users\Gerardo\source\repos\OOP20243\OOP20243\obj\Debug\OOP20243.exe
 C:\Users\Gerardo\source\repos\OOP20243\OOP20243\obj\Debug\OOP20243.pdb
+D:\Programas UNAH\2024-3\Programacion Orientada a Objetos\OOP20243\OOP20243\bin\Debug\OOP20243.exe.config
+D:\Programas UNAH\2024-3\Programacion Orientada a Objetos\OOP20243\OOP20243\bin\Debug\OOP20243.exe
+D:\Programas UNAH\2024-3\Programacion Orientada a Objetos\OOP20243\OOP20243\bin\Debug\OOP20243.pdb
+D:\Programas UNAH\2024-3\Programacion Orientada a Objetos\OOP20243\OOP20243\obj\Debug\OOP20243.csproj.AssemblyReference.cache
+D:\Programas UNAH\2024-3\Programacion Orientada a Objetos\OOP20243\OOP20243\obj\Debug\OOP20243.Principal.resources
+D:\Programas UNAH\2024-3\Programacion Orientada a Objetos\OOP20243\OOP20243\obj\Debug\OOP20243.Properties.Resources.resources
+D:\Programas UNAH\2024-3\Programacion Orientada a Objetos\OOP20243\OOP20243\obj\Debug\OOP20243.csproj.GenerateResource.cache
+D:\Programas UNAH\2024-3\Programacion Orientada a Objetos\OOP20243\OOP20243\obj\Debug\OOP20243.csproj.CoreCompileInputs.cache
+D:\Programas UNAH\2024-3\Programacion Orientada a Objetos\OOP20243\OOP20243\obj\Debug\OOP20243.exe
+D:\Programas UNAH\2024-3\Programacion Orientada a Objetos\OOP20243\OOP20243\obj\Debug\OOP20243.pdb
