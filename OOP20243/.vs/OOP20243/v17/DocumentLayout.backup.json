@@ -3,23 +3,19 @@
   "WorkspaceRootPath": "D:\\Programas UNAH\\2024-3\\Programacion Orientada a Objetos\\OOP20243\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D0A4A9AA-ACC8-4CF4-9BCD-5EF3D3FA9D23}|OOP20243\\OOP20243.csproj|D:\\Programas UNAH\\2024-3\\Programacion Orientada a Objetos\\OOP20243\\oop20243\\principal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D0A4A9AA-ACC8-4CF4-9BCD-5EF3D3FA9D23}|OOP20243\\OOP20243.csproj|d:\\programas unah\\2024-3\\programacion orientada a objetos\\oop20243\\oop20243\\principal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D0A4A9AA-ACC8-4CF4-9BCD-5EF3D3FA9D23}|OOP20243\\OOP20243.csproj|solutionrelative:oop20243\\principal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|OOP20243||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D0A4A9AA-ACC8-4CF4-9BCD-5EF3D3FA9D23}|OOP20243\\OOP20243.csproj|d:\\programas unah\\2024-3\\programacion orientada a objetos\\oop20243\\oop20243\\principal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{D0A4A9AA-ACC8-4CF4-9BCD-5EF3D3FA9D23}|OOP20243\\OOP20243.csproj|solutionrelative:oop20243\\principal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D0A4A9AA-ACC8-4CF4-9BCD-5EF3D3FA9D23}|OOP20243\\OOP20243.csproj|D:\\Programas UNAH\\2024-3\\Programacion Orientada a Objetos\\OOP20243\\oop20243\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D0A4A9AA-ACC8-4CF4-9BCD-5EF3D3FA9D23}|OOP20243\\OOP20243.csproj|solutionrelative:oop20243\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|OOP20243||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D0A4A9AA-ACC8-4CF4-9BCD-5EF3D3FA9D23}|OOP20243\\OOP20243.csproj|d:\\programas unah\\2024-3\\programacion orientada a objetos\\oop20243\\oop20243\\properties\\resources.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}",
-      "RelativeMoniker": "D:0:0:{D0A4A9AA-ACC8-4CF4-9BCD-5EF3D3FA9D23}|OOP20243\\OOP20243.csproj|solutionrelative:oop20243\\properties\\resources.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}"
+      "AbsoluteMoniker": "D:0:0:{D0A4A9AA-ACC8-4CF4-9BCD-5EF3D3FA9D23}|OOP20243\\OOP20243.csproj|D:\\Programas UNAH\\2024-3\\Programacion Orientada a Objetos\\OOP20243\\oop20243\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D0A4A9AA-ACC8-4CF4-9BCD-5EF3D3FA9D23}|OOP20243\\OOP20243.csproj|solutionrelative:oop20243\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -29,20 +25,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "OOP20243",
-              "DocumentMoniker": "D:\\Programas UNAH\\2024-3\\Programacion Orientada a Objetos\\OOP20243\\OOP20243\\OOP20243.csproj",
-              "RelativeDocumentMoniker": "OOP20243\\OOP20243.csproj",
-              "ToolTip": "D:\\Programas UNAH\\2024-3\\Programacion Orientada a Objetos\\OOP20243\\OOP20243\\OOP20243.csproj",
-              "RelativeToolTip": "OOP20243\\OOP20243.csproj",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-12-03T15:37:27.553Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -51,10 +35,34 @@
               "RelativeDocumentMoniker": "OOP20243\\Principal.cs",
               "ToolTip": "D:\\Programas UNAH\\2024-3\\Programacion Orientada a Objetos\\OOP20243\\OOP20243\\Principal.cs",
               "RelativeToolTip": "OOP20243\\Principal.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAQwBwAAAAbAAAAAAAAAA==",
+              "ViewState": "AgIAAEwAAAAAAAAAAAAkwFkAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-02T15:42:31.983Z",
+              "IsPinned": true,
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Principal.cs [Design]",
+              "DocumentMoniker": "D:\\Programas UNAH\\2024-3\\Programacion Orientada a Objetos\\OOP20243\\OOP20243\\Principal.cs",
+              "RelativeDocumentMoniker": "OOP20243\\Principal.cs",
+              "ToolTip": "D:\\Programas UNAH\\2024-3\\Programacion Orientada a Objetos\\OOP20243\\OOP20243\\Principal.cs [Design]",
+              "RelativeToolTip": "OOP20243\\Principal.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-04T15:10:45.054Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "OOP20243",
+              "DocumentMoniker": "D:\\Programas UNAH\\2024-3\\Programacion Orientada a Objetos\\OOP20243\\OOP20243\\OOP20243.csproj",
+              "RelativeDocumentMoniker": "OOP20243\\OOP20243.csproj",
+              "ToolTip": "D:\\Programas UNAH\\2024-3\\Programacion Orientada a Objetos\\OOP20243\\OOP20243\\OOP20243.csproj",
+              "RelativeToolTip": "OOP20243\\OOP20243.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-12-03T15:37:27.553Z"
             },
             {
               "$type": "Document",
@@ -67,18 +75,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-02T15:39:37.802Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Principal.cs [Design]",
-              "DocumentMoniker": "D:\\Programas UNAH\\2024-3\\Programacion Orientada a Objetos\\OOP20243\\OOP20243\\Principal.cs",
-              "RelativeDocumentMoniker": "OOP20243\\Principal.cs",
-              "ToolTip": "D:\\Programas UNAH\\2024-3\\Programacion Orientada a Objetos\\OOP20243\\OOP20243\\Principal.cs [Design]",
-              "RelativeToolTip": "OOP20243\\Principal.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-02T15:33:15.225Z",
-              "EditorCaption": " [Design]"
             }
           ]
         }
