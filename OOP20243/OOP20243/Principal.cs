@@ -127,5 +127,113 @@ namespace OOP20243
                 //no es necesario en el resize mostrar mensaje de error
             }
         }
+
+        private void btnAgregar_Click(object sender, EventArgs e)
+        {
+            //mostrar una nueva instancia de la ventana de Detalle
+            Detalle x = new Detalle();
+            x.ShowDialog();
+            //showDialog pausa la ejecucion de este codigo hasta
+            //que se cierre la ventana de Detalle
+            //si la ventana de Detalle no fue destruida
+            //entonces quiere decir que se hizo click en Aceptar
+            if( x.IsDisposed == false)
+            {
+                //insertar registro en la base de datos
+                try
+                {
+                    String sql = "INSERT Producto(Codigo,Nombre,Costo,PrecioVenta,Existencias,Comentarios) VALUES(@1,@2,@3,@4,@5,@6)";
+                    //crear un objeto de conexion
+                    SqlConnection con = new SqlConnection(Properties.Resources.cadenaConexion);
+                    //crear un manejador de comandos
+                    SqlCommand cmd = new SqlCommand(sql, con);
+                    //llenar los parametros @ del command
+                    cmd.Parameters.AddWithValue("@1", x.Codigo.Text);
+                    cmd.Parameters.AddWithValue("@2", x.Nombre.Text);
+                    cmd.Parameters.AddWithValue("@3", x.Costo.Text);
+                    cmd.Parameters.AddWithValue("@4", x.PrecioVenta.Text);
+                    cmd.Parameters.AddWithValue("@5", x.Existencias.Text);
+                    cmd.Parameters.AddWithValue("@6", x.Comentarios.Text);
+                    //ejecutar el comando
+                    con.Open(); //abrir la conexion
+                    cmd.ExecuteNonQuery();
+                    con.Close(); //cerrar la conexion
+                    MessageBox.Show("Registro agregado exitosamente.");
+                    x.Dispose(); //destruir la ventana de Detalle
+                    //volver a cargar los datos en el grid
+                    this.cargarDatos();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
+        }
+
+        private void btnEditar_Click(object sender, EventArgs e)
+        {
+            //validar que se ha seleccionado una fila, sino pues no continua
+            if (grid1.CurrentRow == null) return;
+            //mostrar nueva ventana de Detalle
+            Detalle x = new Detalle();
+            //pero antes de mostrarla llenar sus cajas de texto con los
+            //valores de la fila seleccionada
+            x.Codigo.Text = grid1.CurrentRow.Cells["Codigo"].Value.ToString();
+            x.Nombre.Text = grid1.CurrentRow.Cells["Nombre"].Value.ToString();
+            x.Costo.Text = grid1.CurrentRow.Cells["Costo"].Value.ToString();
+            x.PrecioVenta.Text = grid1.CurrentRow.Cells["PrecioVenta"].Value.ToString();
+            x.Existencias.Text = grid1.CurrentRow.Cells["Existencias"].Value.ToString();
+            x.Comentarios.Text = grid1.CurrentRow.Cells["Comentarios"].Value.ToString();
+            x.ShowDialog();
+            //si x no fue destruido es porque se hizo click en Aceptar
+            if( x.IsDisposed == false)
+            {
+                String sql = "UPDATE Producto SET Codigo = @1, Nombre = @2, Costo = @3,"+
+                    "PrecioVenta = @4, Existencias = @5, Comentarios = @6 WHERE ProductoID = @7";
+                SqlConnection con = new SqlConnection(Properties.Resources.cadenaConexion);
+                SqlCommand cmd = new SqlCommand(sql, con);
+                //llenar los parametros
+                cmd.Parameters.AddWithValue("@1", x.Codigo.Text);
+                cmd.Parameters.AddWithValue("@2", x.Nombre.Text);
+                cmd.Parameters.AddWithValue("@3", x.Costo.Text);
+                cmd.Parameters.AddWithValue("@4", x.PrecioVenta.Text);
+                cmd.Parameters.AddWithValue("@5", x.Existencias.Text);
+                cmd.Parameters.AddWithValue("@6", x.Comentarios.Text);
+                cmd.Parameters.AddWithValue("@7", grid1.CurrentRow.Cells["ProductoID"].Value.ToString() );
+                //abrir la conexion, ejecutar el comando y cerrar la conexion
+                con.Open();
+                cmd.ExecuteNonQuery();
+                con.Close();
+                x.Dispose(); //destruir la ventana Detalle
+                this.cargarDatos();
+            }
+        }
+
+        private void btnBorrar_Click(object sender, EventArgs e)
+        {
+            //debe haber fila seleccionada
+            if (grid1.CurrentRow == null) return;
+
+            //pregutar al usuario si desea eliminar
+            DialogResult respuesta = MessageBox.Show("Desea eliminar la fila?","Eliminar",MessageBoxButtons.YesNo);
+            if( respuesta == DialogResult.Yes)
+            {
+                try
+                {
+                    String sql = "DELETE FROM Producto WHERE ProductoID = @1";
+                    SqlConnection con = new SqlConnection(Properties.Resources.cadenaConexion);
+                    SqlCommand cmd = new SqlCommand (sql, con);
+                    cmd.Parameters.AddWithValue("@1", grid1.CurrentRow.Cells["ProductoID"].Value.ToString());
+                    con.Open();
+                    cmd.ExecuteNonQuery();
+                    con.Close();
+                    this.cargarDatos();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
+        }
     }
 }

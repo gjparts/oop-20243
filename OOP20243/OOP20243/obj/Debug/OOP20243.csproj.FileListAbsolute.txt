@@ -17,3 +17,4 @@ D:\Programas UNAH\2024-3\Programacion Orientada a Objetos\OOP20243\OOP20243\obj\
 D:\Programas UNAH\2024-3\Programacion Orientada a Objetos\OOP20243\OOP20243\obj\Debug\OOP20243.csproj.CoreCompileInputs.cache
 D:\Programas UNAH\2024-3\Programacion Orientada a Objetos\OOP20243\OOP20243\obj\Debug\OOP20243.exe
 D:\Programas UNAH\2024-3\Programacion Orientada a Objetos\OOP20243\OOP20243\obj\Debug\OOP20243.pdb
+D:\Programas UNAH\2024-3\Programacion Orientada a Objetos\OOP20243\OOP20243\obj\Debug\OOP20243.Detalle.resources
