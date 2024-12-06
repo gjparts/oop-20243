@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Principal));
             this.pruebaConexion = new System.Windows.Forms.Button();
             this.grid1 = new System.Windows.Forms.DataGridView();
             this.btnAgregar = new System.Windows.Forms.Button();
@@ -110,7 +109,6 @@
             this.Controls.Add(this.btnAgregar);
             this.Controls.Add(this.grid1);
             this.Controls.Add(this.pruebaConexion);
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Principal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "20012002049 Gerardo";
